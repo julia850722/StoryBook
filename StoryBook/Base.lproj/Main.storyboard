@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oaU-Sw-zx2">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--目錄-->
+        <scene sceneID="R0Z-CS-xPa">
+            <objects>
+                <viewController id="FM4-5j-O6V" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="drR-xt-eS2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="61c30d47jw1eujosjc69fj20hs0vkwng" translatesAutoresizingMaskIntoConstraints="NO" id="nwD-jI-rdz">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5K-bZ-7id">
+                                <rect key="frame" x="59" y="275" width="256" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="人物介紹">
+                                    <color key="titleShadowColor" red="0.7213221299" green="0.46941928820000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="T4m-zO-WMh" kind="show" id="Q5Z-AX-OXx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npb-PH-ka0">
+                                <rect key="frame" x="59" y="145" width="256" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="節目起源"/>
+                                <connections>
+                                    <segue destination="sLh-QO-ZZ0" kind="show" id="5aC-SA-eoi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.90210143885685823" blue="0.73923516659569766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="V8S-Kw-wiz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="目錄" id="H9I-ak-laY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZI7-Jc-zI5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3135.1999999999998" y="125.61576354679804"/>
+        </scene>
+        <!--人物介紹-->
+        <scene sceneID="e3W-PL-D8U">
+            <objects>
+                <tableViewController id="T4m-zO-WMh" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oVD-7q-jGH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="1" green="0.37724037640000002" blue="0.38889797920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection id="yUT-HV-Koi">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="170" id="AWE-Yl-2Ya">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AWE-Yl-2Ya" id="Kkz-dR-AAa">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="---_burned (1)" translatesAutoresizingMaskIntoConstraints="NO" id="AX8-wk-ACz">
+                                                    <rect key="frame" x="0.0" y="-9" width="173" height="220"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dva-Wf-aVk">
+                                                    <rect key="frame" x="181" y="55" width="176" height="59"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <state key="normal" title="宋智孝"/>
+                                                    <connections>
+                                                        <segue destination="q3h-ZS-1sX" kind="show" id="2Es-5a-OfM"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="170" id="aTO-YG-6hg">
+                                        <rect key="frame" x="0.0" y="170" width="375" height="170"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aTO-YG-6hg" id="yiR-kH-EL9">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="20160216003223_burned" translatesAutoresizingMaskIntoConstraints="NO" id="jsO-ih-21Z">
+                                                    <rect key="frame" x="0.0" y="-9" width="173" height="220"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gy-2c-eVA">
+                                                    <rect key="frame" x="181" y="55" width="176" height="59"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <state key="normal" title="HAHA"/>
+                                                    <connections>
+                                                        <segue destination="i6v-ao-MaX" kind="show" id="KfF-AO-HKp"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="154" id="fO6-Up-fZv">
+                                        <rect key="frame" x="0.0" y="340" width="375" height="154"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fO6-Up-fZv" id="iax-NC-x5U">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="153.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1858634_burned" translatesAutoresizingMaskIntoConstraints="NO" id="Bat-Fo-7Cs">
+                                                    <rect key="frame" x="0.0" y="-9" width="156" height="163"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2QH-8W-uAO">
+                                                    <rect key="frame" x="177" y="52" width="176" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <state key="normal" title="李光洙"/>
+                                                    <connections>
+                                                        <segue destination="CsN-QW-MVo" kind="show" id="YeO-za-x3Z"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="145" id="Nxe-W4-msL">
+                                        <rect key="frame" x="0.0" y="494" width="375" height="145"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nxe-W4-msL" id="qE7-hL-dIP">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="144.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1U3345648-1_burned" translatesAutoresizingMaskIntoConstraints="NO" id="n74-fc-HaS">
+                                                    <rect key="frame" x="0.0" y="-9" width="162" height="154"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAy-Q9-uQJ">
+                                                    <rect key="frame" x="170" y="48" width="176" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <state key="normal" title="金鐘國"/>
+                                                    <connections>
+                                                        <segue destination="lHt-hj-iz1" kind="show" id="S4H-bI-3VO"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="iUN-F0-K5G">
+                                        <rect key="frame" x="0.0" y="639" width="375" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iUN-F0-K5G" id="csD-zL-iCZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="129.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="9027_burned" translatesAutoresizingMaskIntoConstraints="NO" id="CXb-vV-iWL">
+                                                    <rect key="frame" x="0.0" y="-9" width="166" height="147"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mui-IF-1Jq">
+                                                    <rect key="frame" x="174" y="40" width="176" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <state key="normal" title="姜gary"/>
+                                                    <connections>
+                                                        <segue destination="ZAv-bm-XcD" kind="show" id="cEu-Dl-Pmh"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="133" id="hfO-1E-T9c">
+                                        <rect key="frame" x="0.0" y="769" width="375" height="133"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hfO-1E-T9c" id="tT5-VB-mDR">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="132.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yjs_burned" translatesAutoresizingMaskIntoConstraints="NO" id="oTi-sT-5jD">
+                                                    <rect key="frame" x="0.0" y="-9" width="151" height="142"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cy2-Zo-mYJ">
+                                                    <rect key="frame" x="176" y="42" width="176" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <state key="normal" title="劉在石"/>
+                                                    <connections>
+                                                        <segue destination="sb0-fX-Hsn" kind="show" id="Z4I-me-ReT"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="113" id="ew6-uw-NrH">
+                                        <rect key="frame" x="0.0" y="902" width="375" height="113"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ew6-uw-NrH" id="qPx-wA-6S2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="112.66666666666667"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="66db85cbgw1e1hoblhrb7j_burned" translatesAutoresizingMaskIntoConstraints="NO" id="YiP-Az-ugz">
+                                                    <rect key="frame" x="0.0" y="-9" width="151" height="140"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVc-lR-ilA">
+                                                    <rect key="frame" x="191" y="32" width="176" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <state key="normal" title="池石鎮"/>
+                                                    <connections>
+                                                        <segue destination="jvI-uz-UJ7" kind="show" id="RsN-PS-3sj"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="T4m-zO-WMh" id="hbo-5L-qvF"/>
+                            <outlet property="delegate" destination="T4m-zO-WMh" id="dKQ-hG-9sJ"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="人物介紹" id="PHe-9X-uuU"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="04H-2F-vri" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2501.5999999999999" y="867.48768472906409"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IcP-uV-JNY">
+            <objects>
+                <viewController id="q3h-ZS-1sX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3LP-Lu-vKn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="61c30d47jw1eujoskfglej209e0go3zm" translatesAutoresizingMaskIntoConstraints="NO" id="DX5-Gl-Fv2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="280px-2017年1月18日宋智孝的Beauty_View發佈會" translatesAutoresizingMaskIntoConstraints="NO" id="ejv-Qp-3i6">
+                                <rect key="frame" x="71" y="88" width="240" height="386"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="宋智孝" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M0e-i3-NxY">
+                                <rect key="frame" x="128" y="453" width="117" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90210143890000005" blue="0.73923516659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IIf-WX-Cng">
+                                <rect key="frame" x="32" y="500" width="319" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90210143890000005" blue="0.73923516659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">宋智孝（韓語：송지효 Song Ji-hyo；1981年8月15日－），出生本名為千成林（천성임 Cheon Seong-im ）[1]，現時本名改為千秀妍（천수연 Cheon Soo-yeon）[2][3]。韓國女演員。
+2000年拍攝保寧製藥的電視廣告，2001年以拍攝《KIKI》雜誌封面正式出道，2003年開始影視作品的拍攝，一直以玉女形象示人，先後在《宮》化身皇太子的初戀情人、《朱蒙》裡飾演高句麗皇后禮氏夫人，《霜花店》她又是演王后，其敬業的表現在韓國獲得好評。而宋智孝在韓國綜藝節目《Running Man》裡的表現一改她往日在戲劇中所扮演的角色所帶給觀眾的印象，她在節目中表現率真、大方，並且不顧忌自己的形象而在遊戲中十分努力地去做好自己的任務，甚至還不介意素顏上鏡。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="8Km-rv-jd8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sPs-TJ-0cn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3600.8000000000002" y="866.74876847290648"/>
+        </scene>
+        <!--節目起源-->
+        <scene sceneID="jAh-j2-Iit">
+            <objects>
+                <viewController id="sLh-QO-ZZ0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="onB-NP-ZI3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="running-man-korean-2016" translatesAutoresizingMaskIntoConstraints="NO" id="bmG-b5-GEM">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oWh-tI-jIF">
+                                <rect key="frame" x="16" y="118" width="343" height="592"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.86812823525233918" blue="0.70194428913775342" alpha="0.88629936733128833" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">Running Man》（韓語：런닝맨）是韓國SBS電視台《星期天真好》一部的綜藝節目，於2010年7月11日啟播。
+由2012年5月6日開始，逢韓國時間星期日下午6時10分開始播放，每集約80-90分鐘；自2015年11月8日起，逢韓國時間星期日下午4時50分開始播放；自2016年4月17日起，逢韓國時間星期日下午6時25分開始播放。自2017年3月26日起，逢韓國時間星期日下午4時50分開始播放[1]；臺灣原由FOX頻道取得官方授權集數（至第261集），自2016年1月至12月底（至第331集），可於LINE TV線上觀看官方授權完整版（自第274集起，除第275、276集外，均有各集完整內容）。
+初期的遊戲設定是嘉賓與主持們被鎖於韓國著名地標進行遊戲，並需於其開始營業前逃出，經過幾輪遊戲後，最後輸掉的成員會被安排在人來人往的地點中接受尷尬的懲罰。2011年5月以後取消給予遊戲輸者的懲罰，不定期給予勝者獎品，並且遊戲方式更改為先前往各地方進行任務，由勝出的成員或隊伍獲得對最終任務有利之提示或權力，而節目遊戲中最著名的環節就是屬於緊張和刺激的撕名牌戰。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Ipu-4m-FQ8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="節目起源" id="DXw-bJ-NRi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h9d-7e-1Ob" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4383" y="157"/>
+        </scene>
+        <!--首頁-->
+        <scene sceneID="6oE-Z6-cTd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Ac-Ee-wfb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首頁" id="G0I-7M-pbA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5WE-me-njP">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FM4-5j-O6V" kind="relationship" relationship="rootViewController" id="L2s-Q5-yZq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OLO-Wa-XER" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2332" y="125.61576354679804"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="N4u-GD-Yzp">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="oaU-Sw-zx2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CCj-Hu-vvJ">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3Ac-Ee-wfb" kind="relationship" relationship="viewControllers" id="R3Z-bC-FTt"/>
+                        <segue destination="T4m-zO-WMh" kind="relationship" relationship="viewControllers" id="CUM-bH-ylz"/>
+                        <segue destination="sLh-QO-ZZ0" kind="relationship" relationship="viewControllers" id="fq3-nn-HSP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wLO-5Y-aWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1689.5999999999999" y="125.61576354679804"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3Un-Ut-juX">
+            <objects>
+                <viewController id="CsN-QW-MVo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N7t-bE-6f0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="61c30d47jw1eujoskfglej209e0go3zm" translatesAutoresizingMaskIntoConstraints="NO" id="WWD-8Z-blZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="李光洙" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LK9-b8-ljF">
+                                <rect key="frame" x="128" y="453" width="117" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90210143890000005" blue="0.73923516659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Xwc-KO-fxE">
+                                <rect key="frame" x="32" y="500" width="319" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90210143890000005" blue="0.73923516659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">李光洙[1]（韓語：이광수／李光洙 Lee Kwang Soo，1985年7月14日－），韓國著名男演員、主持和模特兒，身高191公分。
+曾是模特兒，於2008年以《KTF Show－二十歲篇》廣告出道；2009年拍攝MBC日日劇《穿透屋頂的High Kick》後開始為人熟悉；2010年出演SBS綜藝節目《Running Man》後晉身為綜藝新星，在節目海外拍攝時獲得壓倒性人氣，被冠以「亞洲王子」的稱號[2]，於電影界亦成為崛起的新勢力。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Lee_Kwang-Soo_at_Malaysia_for_Running_Man_Fan_Meeting_Asian_Tour_2014_-_1" translatesAutoresizingMaskIntoConstraints="NO" id="3Dt-wi-EXA">
+                                <rect key="frame" x="66" y="88" width="240" height="386"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Lwr-3m-QV6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jk5-Tg-aDe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3805.5999999999999" y="1576.8472906403942"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BRN-Gp-XDQ">
+            <objects>
+                <viewController id="lHt-hj-iz1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qd0-Q7-kQw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="61c30d47jw1eujoskfglej209e0go3zm" translatesAutoresizingMaskIntoConstraints="NO" id="eVI-T4-ykP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="金鐘國" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wRl-FC-rTh">
+                                <rect key="frame" x="128" y="453" width="117" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90210143890000005" blue="0.73923516659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="roX-3R-zwX">
+                                <rect key="frame" x="32" y="500" width="319" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90210143890000005" blue="0.73923516659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">金鍾國[1][2]（韓語：김종국，英語：Kim Jong Kook，1976年4月25日[3]－），韓國著名男藝人，身高178公分，曾屬於二人男子組合Turbo，直到2000年Mikey當兵，金鐘國正式獨立發展，2001年推出首張個人專輯。金鐘國於2005年憑《討人喜歡》一曲風靡全韓國，並於同年橫掃三大地面電視台的音樂大獎，成為韓國樂壇近二十年來唯一一位三冠個人得主。2015年12月2日，金鐘國透過官方粉絲俱樂部宣告睽違15年的Turbo於同年12月21日發表新專輯回歸。目前是韓國當紅綜藝節目《星期天真好－Running Man》的固定成員之一，節目中有著出色的表現，吸納了不少的人氣[4]並擁有「能力者」、「斯巴達國斯」及「國教練」等稱號。加上近年於中國大陸參與不少綜藝節目，於大中華地區人氣漸增。
+侄女Soya為韓國混音團體Soya N'sun成員之一。
+2015年12月21日，Turbo以三人完整體帶同新專輯重新回歸。
+他是韓國著名的義氣男，與圈內車太鉉、洪京民、張赫等人是著名的 「龍年兄弟」。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="250px-Kim_Jong_Kook_at_Race_Start_in_Shanghai_2015" translatesAutoresizingMaskIntoConstraints="NO" id="jWG-qh-WOc">
+                                <rect key="frame" x="71" y="88" width="240" height="386"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="R3X-1H-N7L"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DQ9-Mn-IJ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3133.5999999999999" y="1576.8472906403942"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="M11-WQ-jC5">
+            <objects>
+                <viewController id="ZAv-bm-XcD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4tn-uz-B8W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="61c30d47jw1eujoskfglej209e0go3zm" translatesAutoresizingMaskIntoConstraints="NO" id="tEu-f7-rBI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="姜gary" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SB2-TK-nC3">
+                                <rect key="frame" x="128" y="453" width="117" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90210143890000005" blue="0.73923516659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Aw9-V5-Pua">
+                                <rect key="frame" x="32" y="500" width="319" height="221"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90210143890000005" blue="0.73923516659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Gary[註 2][註 3]（韓語：개리，1978年2月24日－），本名為姜熙建[註 1]（강희건／姜熙建 Gang Hui Geon，英語：Gary Kang Hee-gun），是韓國男子二人饒舌組合Leessang。曾為SBS綜藝節目《Running Man》成員之一，與節目成員宋智孝的「週一情侶」感情線備受歡迎。於2017年4月5日宣布已與圈外女性登記結婚。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Kang_Gary" translatesAutoresizingMaskIntoConstraints="NO" id="bSC-J6-0Tc">
+                                <rect key="frame" x="71" y="88" width="240" height="386"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="hmT-ml-bh4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IvS-jD-GH8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2461.5999999999999" y="1576.8472906403942"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MtR-ZT-Pj8">
+            <objects>
+                <viewController id="i6v-ao-MaX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LOL-qk-D5d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="61c30d47jw1eujoskfglej209e0go3zm" translatesAutoresizingMaskIntoConstraints="NO" id="WLt-eo-mjZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="HAHA" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n6H-04-JJ7">
+                                <rect key="frame" x="128" y="453" width="117" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90210143890000005" blue="0.73923516659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2h8-aA-rd1">
+                                <rect key="frame" x="32" y="500" width="319" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90210143890000005" blue="0.73923516659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">Haha出身於嘻哈組合Zikiri，2001年以《A/K/A Check Up》出道。
+2002年時，演出青春情景喜劇《Nonstop 3》在劇中飾演一個惹事又抱有喜感的角色，充分地展示出他的喜劇細胞，得到大眾的注意，因此開拓了他的藝能之路。 成為韓國著名綜藝節目《X-Man》的固定嘉賓，同時也擔任《無限挑戰》與《Running Man》的主持人，並在電台擁有自己的節目《Haha's TENTEN》。
+戲劇方面，Haha也曾經演出不少劇集及電影，包括《彩虹羅曼史》、《誰上她的床？》以及《元卓的天使》等，由於同時具有歌手、演員及主持等身分，因而被人稱為「全能藝人」。於2008年2月入伍服役並於2010年3月回歸。
+2006年7月公開與MBC氣象報導員安惠京的戀情，二人表現甜蜜也曾成為韓國人心目中「最可能馬上結婚的情侶」。可是於2010年當兵期間，戀情無疾而終，曾於《Running Man》中表示戀情長達五年，並問候對方。
+2012年8月14日宣布與韓國歌手Star結婚[1]，於同年10月註冊，並於同年11月30日舉行婚禮。2013年1月25日，宣布妻子已懷孕三個月。同年7月9日，Haha於Twitter宣布喜得一子Dream，8月28日Star於Twitter宣布兒子的出生證明中全名登記為河夢兒（하드림）[2]。
+2017年3月22日，幼子Soul出生。
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HaHa,_Running_Man_Bros_US_Tour_2014_press_conference,_Dallas,_December_14" translatesAutoresizingMaskIntoConstraints="NO" id="PAy-v8-FCT">
+                                <rect key="frame" x="71" y="88" width="240" height="386"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="KNa-cj-8Le"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMd-O8-HgA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1688.8" y="1576.8472906403942"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Zct-bl-vkC">
+            <objects>
+                <viewController id="sb0-fX-Hsn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fTX-t7-hqr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="61c30d47jw1eujoskfglej209e0go3zm" translatesAutoresizingMaskIntoConstraints="NO" id="0A5-ga-h1w">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="劉在石" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hkd-wR-fcN">
+                                <rect key="frame" x="128" y="453" width="117" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90210143890000005" blue="0.73923516659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jqk-rq-8kl">
+                                <rect key="frame" x="32" y="500" width="319" height="221"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90210143890000005" blue="0.73923516659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">劉在錫[註 3]（韓語：유재석／劉在錫 Yu Jae Seok；日語：ユ·ジェソク；1972年8月14日－），中國大陸常譯「劉在石」，是韓國超高人氣[2]的一位主持人、諧星及演員，本貫江陵，暱稱為「國民MC」[3]，分別於韓國三大無線電視台KBS、MBC、SBS主持不少綜藝節目，其中包括非常受歡迎的《無限挑戰》、《家族的誕生》及《Running Man》等。
+無名時期主持節目時常帶著蚱蜢頭套，因而有「蚱蜢」之名。他親切、聰明、可愛的主持風格令他成為韓國最受歡迎的主持及喜劇演員。劉在錫在2008年時的出場費高達每場840萬韓圓[註 4]，在韓國三大無線電視台KBS、MBC、SBS中主持的節目收視率都曾達到第一。
+2011年至2015年期間，劉在錫都是在沒有所屬公司的情況下獨自活動，2015年7月確定正式和FNC娛樂簽約[4]。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="250px-Yoo_Jae_Suk_going_to_work_at_Happy_Together_on_August_19,_2017_(1)" translatesAutoresizingMaskIntoConstraints="NO" id="ms7-pw-NZG">
+                                <rect key="frame" x="67" y="88" width="240" height="386"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="xAv-AZ-dHK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z8A-RN-w7S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840.79999999999995" y="1576.8472906403942"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="x9F-QC-Deu">
+            <objects>
+                <viewController id="jvI-uz-UJ7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3O5-3X-Ew2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="61c30d47jw1eujoskfglej209e0go3zm" translatesAutoresizingMaskIntoConstraints="NO" id="lrF-Ib-s2K">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ji_Suk_Jin_at_Malaysia_for_Running_Man_Fan_Meeting_Asian_Tour_2014" translatesAutoresizingMaskIntoConstraints="NO" id="40G-de-94a">
+                                <rect key="frame" x="67" y="44" width="240" height="386"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="池石鎮" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CX6-19-CF4">
+                                <rect key="frame" x="128" y="453" width="117" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90210143890000005" blue="0.73923516659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="p49-Qn-1Hv">
+                                <rect key="frame" x="32" y="500" width="319" height="212"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90210143890000005" blue="0.73923516659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">池錫辰（韓語：지석진／池錫辰 Jee Seok Jin；英語：Jee Seok-jin；以往慣以池石鎮音譯，其後本人於新浪微博正字 [3][註 1]；1966年2月10日－），出生於韓國江原道旌善郡，是韓國有地位的節目主持人、搞笑藝人、歌手及演員。
+1992年憑藉專輯出道，1994年參加SBS主持人選拔 ，此後以主持人的身份活躍。1999年開始主持《真實遊戲》第一季，2004年主持節目《明星金鐘》。現為SBS綜藝節目《星期天真好－Running Man》的固定成員之一。池錫辰因大鼻子而被稱為「王鼻子大哥」，在《Running Man》月中亦有「最弱體」、「Race Starter」、「黑班羚大哥」等稱號。2015年4月至6月以輔助MC的身份出演劉在錫和金九拉主持的SBS綜藝節目《同床異夢，沒關係沒關係》。
+其圈內好友有劉在錫、朴明洙、朴相勉、金濟東、鄭埻夏、李光洙、Haha、李鐘赫等。傳聞他曾經與劉在錫和金勇萬三天不睡覺一直聊天，因此他們有「囉嗦/脫口秀之王俱樂部」之稱[4]。
+池錫辰時隔22年後於2014年10月以歌手身份回歸，首次以歌手身份參與錄製了KBS港韓電視劇《貓來了》的主題曲《說愛你這句話》。2015年5月29日在百度音樂首發的首張中文單曲《髮卡》，並於"RACE START!" Running Man Fan Meeting Asia Tour 2015 北京站首次現場演唱；這首歌的韓文版是韓劇《七天的浪漫》的插曲。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="ZKE-b6-7Fs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="chM-FQ-c52" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47.200000000000003" y="1576.8472906403942"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="---_burned (1)" width="599" height="576"/>
+        <image name="1858634_burned" width="202" height="229"/>
+        <image name="1U3345648-1_burned" width="318" height="279"/>
+        <image name="20160216003223_burned" width="471" height="334"/>
+        <image name="250px-Kim_Jong_Kook_at_Race_Start_in_Shanghai_2015" width="250" height="250"/>
+        <image name="250px-Yoo_Jae_Suk_going_to_work_at_Happy_Together_on_August_19,_2017_(1)" width="250" height="349"/>
+        <image name="280px-2017年1月18日宋智孝的Beauty_View發佈會" width="280" height="444"/>
+        <image name="61c30d47jw1eujosjc69fj20hs0vkwng" width="146" height="260"/>
+        <image name="61c30d47jw1eujoskfglej209e0go3zm" width="338" height="600"/>
+        <image name="66db85cbgw1e1hoblhrb7j_burned" width="1105" height="800"/>
+        <image name="9027_burned" width="188" height="200"/>
+        <image name="HaHa,_Running_Man_Bros_US_Tour_2014_press_conference,_Dallas,_December_14" width="250" height="229"/>
+        <image name="Ji_Suk_Jin_at_Malaysia_for_Running_Man_Fan_Meeting_Asian_Tour_2014" width="250" height="324"/>
+        <image name="Kang_Gary" width="250" height="445"/>
+        <image name="Lee_Kwang-Soo_at_Malaysia_for_Running_Man_Fan_Meeting_Asian_Tour_2014_-_1" width="250" height="371"/>
+        <image name="running-man-korean-2016" width="400" height="200"/>
+        <image name="yjs_burned" width="331" height="304"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="5aC-SA-eoi"/>
+        <segue reference="Q5Z-AX-OXx"/>
+    </inferredMetricsTieBreakers>
+</document>
